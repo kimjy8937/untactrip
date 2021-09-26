@@ -146,7 +146,6 @@ public class FlowDensityDong extends AppCompatActivity {
             });
         }
         avg = sum2/7;
-        sum2 = 1.0;
         sum2 = 0.0;
         date_info.setText(format_time1 + " " + guName + " " + ldongName + " 유동인구" );
         safeCasterApi.getFlowDensity_dong(key,
