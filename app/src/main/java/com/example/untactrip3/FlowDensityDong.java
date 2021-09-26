@@ -146,8 +146,8 @@ public class FlowDensityDong extends AppCompatActivity {
             });
         }
         avg = sum2/7;
+        sum2 = 1.0;
         sum2 = 0.0;
-
         date_info.setText(format_time1 + " " + guName + " " + ldongName + " 유동인구" );
         safeCasterApi.getFlowDensity_dong(key,
                 format_time2, ldongCd).enqueue(new Callback<FlowDensity_dong>() {
@@ -156,18 +156,19 @@ public class FlowDensityDong extends AppCompatActivity {
                 FlowDensity_dong flowDensity_dong = response.body();
                 Log.d("retrofit", "Data fetch success");
                 items = flowDensity_dong.getData();
+
                 mAdapter = new RecyclerAdapter_Flow(items, FlowDensityDong.this, ldongName);
                 recyclerView.setAdapter(mAdapter);
 
                 if (avg > items.get(h).getFlowDensityPercentile()) {
                     iv_state.setImageResource(R.drawable.good);
                     text_state.setText("평소보다 사람이 적어요" + Double.toString(avg));
+
                 } else {
                     iv_state.setImageResource(R.drawable.bad);
                     text_state.setText("평소보다 사람이 많아요!" + Double.toString(avg));
                 }
             }
-
             @Override
             public void onFailure(Call<FlowDensity_dong> call, Throwable t) {
                 Log.d("TEST", "절대유동인구 조회실패 ");
