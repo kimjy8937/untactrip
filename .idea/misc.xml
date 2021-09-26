@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/20180267/Desktop/UntactripHum.2/app/src/main/res/layout/activity_dong_menu.xml" value="0.1109375" />
+        <entry key="..\:/Users/20180267/Desktop/UntactripHum.2/app/src/main/res/layout/activity_flow_density_dong.xml" value="0.1109375" />
+        <entry key="..\:/Users/20180267/Desktop/UntactripHum.2/app/src/main/res/layout/flow_card.xml" value="0.1109375" />
+        <entry key="..\:/Users/20180267/Desktop/UntactripHum.2/app/src/main/res/layout/item.xml" value="0.1109375" />
+        <entry key="app/src/main/res/drawable/edittext_style.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3765625" />
+        <entry key="app/src/main/res/drawable/radius.xml" value="0.3707692307692308" />
+        <entry key="app/src/main/res/font/font.xml" value="0.38461538461538464" />
+        <entry key="app/src/main/res/layout/activity_dong_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_flow_density_dong.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_seoul_menu.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/flow_card.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/item.xml" value="0.2015625" />
+        <entry key="app/src/main/res/layout/seoul_item.xml" value="0.36041666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
