@@ -3,6 +3,7 @@ package com.example.untactrip3;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -62,16 +63,20 @@ public class RecyclerAdapter_seoul extends RecyclerView.Adapter<RecyclerAdapter_
             main_textView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), DongMenu.class);
-                    intent.putExtra("gu", data.getTitle());
-                    context.startActivity(intent);
+                    if(view.getContext().getClass() == SeoulMenu.class){
+                        Intent intent = new Intent(view.getContext(), DongMenu.class);
+                        intent.putExtra("gu", data.getTitle());
+                        context.startActivity(intent);
+                    }else if(view.getContext().getClass() == KoreaMenu.class){
+                        Intent intent = new Intent(view.getContext(), SiMenu.class);
+                        intent.putExtra("si",data.getTitle());
+                        context.startActivity(intent);
+                    }
                 }
             });
-
         }
         @Override
         public void onClick(View v){
-
         }
     }
 }

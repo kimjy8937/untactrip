@@ -1,4 +1,5 @@
 package com.example.untactrip3.api;
+import com.example.untactrip3.SiMenu;
 import com.example.untactrip3.dto.FlowDensity_dong;
 
 import retrofit2.Call;
@@ -12,6 +13,10 @@ public interface SafeCasterApi {
     @Headers("Content-Type: application/json")
     @GET("https://apis.openapi.sk.com/safecaster/v1/search/safetyindex/ldongcd/flow")
     Call<FlowDensity_dong> getFlowDensity_dong(@Header("appKey") String appKey, @Query("filterDate") String filterDate, @Query("ldongCd") String ldongCd);
+
+    @Headers("Content-Type: application/json")
+    @GET("https://apis.openapi.sk.com/safecaster/v1/search/safetyindex/ldongcd/flow")
+    Call<FlowDensity_dong> getSiMenu(@Header("appKey") String appKey, @Query("filterDate") String filterDate, @Query("ldongCd") String ldongCd);
 
     @Headers("Content-Type: application/json")
     @GET("/apps/socialcontact/ldongcd/timeseries/three")

@@ -13,7 +13,6 @@ public class Datum_dong {
     private String ldongCd;
     @SerializedName("flowDensityPercentile")
     @Expose
-
     private Double flowDensityPercentile;
 
     public String getHh() {

@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_korea"
         android:layout_width="160dp"
         android:layout_height="300dp"
         android:background="@drawable/radius"

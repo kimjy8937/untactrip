@@ -6,23 +6,15 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.untactrip3.R;
-import com.example.untactrip3.RecyclerAdapter_seoul;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
 
 public class DongMenu extends AppCompatActivity {
@@ -43,8 +35,8 @@ public class DongMenu extends AppCompatActivity {
             if (SeoulAreaList.get(i).get("lDongCd").toString().equals(code))
                 result=SeoulAreaList.get(i).get("dong").toString();
         }
-        if(i>SeoulAreaList.size())
-            result="없는 동입니다";
+//        if(i>SeoulAreaList.size())
+//            result="없는 동입니다";
 
         return result;
     }
@@ -60,7 +52,7 @@ public class DongMenu extends AppCompatActivity {
     }
 
     private void init() {
-        RecyclerView recyclerView = findViewById(R.id.dong_recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.si_recyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
 
 
@@ -90,12 +82,7 @@ public class DongMenu extends AppCompatActivity {
             Map<String,Object> SeoulAreaData= gson.fromJson( jsonObject.toString(),new TypeToken<Map<String, Object>>(){}.getType());
 
             SeoulAreaList = (ArrayList) SeoulAreaData.get("data");
-
-
         }catch (Exception e){e.printStackTrace();}
-
-
-
 
 
 

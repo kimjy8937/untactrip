@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Untactrip3">
         <activity
+            android:name=".FlowDensitySi"
+            android:exported="true" />
+        <activity
+            android:name=".test_page"
+            android:exported="true" />
+        <activity
+            android:name=".SiMenu"
+            android:exported="true" />
+        <activity
+            android:name=".KoreaMenu"
+            android:exported="true" />
+        <activity
             android:name=".FlowDensityDong"
             android:exported="true" />
         <activity

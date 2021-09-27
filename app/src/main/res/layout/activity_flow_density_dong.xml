@@ -32,25 +32,22 @@
 
     <ImageView
         android:id="@+id/iv_state"
-        android:layout_width="139dp"
-        android:layout_height="150dp"
+        android:layout_width="199dp"
+        android:layout_height="222dp"
         app:layout_constraintBottom_toTopOf="@+id/date_info"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/good" />
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/text_state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:gravity="center"
         android:textColor="#353333"
-        android:textSize="25sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

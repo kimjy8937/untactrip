@@ -5,6 +5,9 @@
     android:background="#f4f4f4"
     android:orientation="vertical">
 
+    <!--        android:backgroundTint="#A3DFDFDF"-->
+    <!--        />-->
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -17,9 +20,10 @@
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/si_recyclerView"
+        android:id="@+id/seoul_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
         android:background="#f4f4f4" />
 
 </LinearLayout>
